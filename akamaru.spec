@@ -1,5 +1,5 @@
 %define svn	722
-%define release %mkrel 0.%{svn}.2
+%define release %mkrel 0.%{svn}.3
 
 %define major		0
 %define libname		%mklibname %{name} %{major}
@@ -24,6 +24,7 @@ kiba-dock, a dock applet.
 %package -n %{libname}
 Group:		System/Libraries
 Summary:	Shared library for %{name}
+Provides:	lib%{name} = %{version}-%{release}
 
 %description -n %{libname}
 Akamaru is a simple, but fun, physics engine prototype. It is used by
@@ -61,6 +62,7 @@ rm -rf %{buildroot}
 
 %files -n %{develname}
 %defattr(-,root,root)
+%doc AUTHORS ChangeLog README
 %{_includedir}/%{name}
 %{_libdir}/lib%{name}.so
 %{_libdir}/lib%{name}.*a
