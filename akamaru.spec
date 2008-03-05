@@ -1,5 +1,5 @@
 %define svn	722
-%define release %mkrel 0.%{svn}.1
+%define release %mkrel 0.%{svn}.2
 
 %define major		0
 %define libname		%mklibname %{name} %{major}
@@ -33,6 +33,7 @@ kiba-dock, a dock applet.
 Group:		Development/C
 Summary:	Development headers for %{name}
 Provides:	%{name}-devel = %{version}-%{release}
+Requires:	%{libname} = %{version}-%{release}
 
 %description -n %{develname}
 Akamaru is a simple, but fun, physics engine prototype. It is used by
