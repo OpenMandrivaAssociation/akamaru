@@ -1,5 +1,5 @@
-%define svn	722
-%define release %mkrel 0.%{svn}.3
+%define svn	862
+%define release %mkrel 0.%{svn}.1
 
 %define major		0
 %define libname		%mklibname %{name} %{major}
@@ -12,6 +12,7 @@ Summary:	Physics engine used by kiba-dock
 Group:		System/X11
 URL:		http://www.kiba-dock.org/
 Source0:	%{name}-%{svn}.tar.lzma
+Patch0:		akamaru-0.1-build.patch
 License:	BSD
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	intltool
@@ -43,6 +44,7 @@ for Akamaru.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1 -b .build
 
 %build
 sh autogen.sh -V
