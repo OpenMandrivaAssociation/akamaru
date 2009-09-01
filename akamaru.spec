@@ -1,5 +1,5 @@
 %define svn	862
-%define release %mkrel 0.%{svn}.1
+%define release %mkrel 0.%{svn}.2
 
 %define major		0
 %define libname		%mklibname %{name} %{major}
