@@ -1,0 +1,11 @@
+--- akamaru/configure.in	2008-06-10 18:19:21.000000000 -0700
++++ akamaru/configure.in.new	2008-08-15 12:44:48.000000000 -0700
+@@ -48,7 +48,7 @@
+ 
+ AKAMARU_REQUIRES="[glib-2.0 >= 2.8.0 gobject-2.0]"
+ PKG_CHECK_MODULES(AKAMARU, "$AKAMARU_REQUIRES")
+-AC_SUBST("$AKAMARU_REQUIRES")
++# AC_SUBST("$AKAMARU_REQUIRES")
+ 
+ # Checks for libraries.
+ PKG_CHECK_MODULES([GLIB], [glib-2.0 >= 2.8.0])
