@@ -46,7 +46,7 @@ for Akamaru.
 %build
 export LDFLAGS="${LDFLAGS} -lm" 
 sh autogen.sh -V
-%configure2_5x 
+%configure
 %make 
 
 %install
@@ -59,33 +59,7 @@ sh autogen.sh -V
 %doc AUTHORS ChangeLog README
 %{_includedir}/%{name}
 %{_libdir}/lib%{name}.so
-%{_libdir}/lib%{name}.*a
+#{_libdir}/lib%{name}.*a
 %{_libdir}/pkgconfig/%{name}.pc
-
-
-%changelog
-* Tue Sep 01 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.1-0.862.4mdv2010.0
-+ Revision: 424027
-- rebuild
-- rebuild
-- rebuild
-
-* Fri Aug 15 2008 Adam Williamson <awilliamson@mandriva.org> 0.1-0.862.1mdv2009.0
-+ Revision: 272447
-- add build.patch to fix an error in configure.in
-- new snapshot 862
-
-* Wed Mar 05 2008 Adam Williamson <awilliamson@mandriva.org> 0.1-0.722.3mdv2008.1
-+ Revision: 180224
-- explicit provides in library package
-- add docs
-
-* Wed Mar 05 2008 Adam Williamson <awilliamson@mandriva.org> 0.1-0.722.2mdv2008.1
-+ Revision: 180220
-- devel package requires lib package
-
-* Wed Mar 05 2008 Adam Williamson <awilliamson@mandriva.org> 0.1-0.722.1mdv2008.1
-+ Revision: 180211
-- import akamaru
 
 
