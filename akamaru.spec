@@ -13,7 +13,7 @@ Source0:			%{name}-%{svn}.tar.lzma
 Patch0:			akamaru-0.1-build.patch
 License:			BSD
 BuildRequires:		intltool
-BuildRequires:		glib2-devel
+BuildRequires:		pkgconfig(glib-2.0)
 
 %description
 Akamaru is a simple, but fun, physics engine prototype. It is used by
