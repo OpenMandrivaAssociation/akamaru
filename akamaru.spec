@@ -8,7 +8,7 @@ Version:			0.1
 Release:			%{release}
 Summary:			Physics engine used by kiba-dock
 Group:			System/X11
-URL:			http://www.kiba-dock.org/
+URL:			https://www.kiba-dock.org/
 Source0:			%{name}-%{svn}.tar.lzma
 Patch0:			akamaru-0.1-build.patch
 License:			BSD
