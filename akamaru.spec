@@ -12,6 +12,11 @@ URL:			https://www.kiba-dock.org/
 Source0:			%{name}-%{svn}.tar.lzma
 Patch0:			akamaru-0.1-build.patch
 License:			BSD
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:		intltool
 BuildRequires:		pkgconfig(glib-2.0)
 
